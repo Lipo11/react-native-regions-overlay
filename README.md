@@ -19,7 +19,9 @@ export default class Example extends React.Component
         const regions = [ { position: { x: 10, y: 10, radius: 10 }, type: 'circle' }, { position: { x: 10, y: 10, width: 10, height: 10 }, type: 'rect' } ];
 
         return (
-            <RNRegionsOverlay style={ styles.overlay } regions={ regions } />
+            <View style={{ flex:1, backgroundColor: 'blue' }}>
+                <RNRegionsOverlay style={{ flex:1, backgroundColor: 'rgba(0, 0, 0, 0.5)' }} regions={ regions } />
+            </View>
         );
     }
 }
